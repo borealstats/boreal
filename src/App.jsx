@@ -794,39 +794,39 @@ function DetailPanel({p,onClose,onCompare}){
             </React.Fragment>
           ))}
         </div>
-        {p.ppg&&<div style={{display:"flex",alignItems:"center",gap:10,background:T.bgCard,border:`1px solid ${T.border}`,borderRadius:8,padding:"7px 14px",marginTop:8}}>
-          <div style={{fontFamily:"'DM Mono',monospace",fontSize:13,color:T.textLabel,letterSpacing:1.5,marginRight:4}}>{p.season||"2024-25"}</div>
-          {p.verified?<span style={{fontFamily:"'DM Mono',monospace",fontSize:12,color:"#69f0ae",letterSpacing:0.5,marginRight:4}}>✓ VERIFIED</span>:<span style={{fontFamily:"'DM Mono',monospace",fontSize:12,color:"#ff8a65",letterSpacing:0.5,marginRight:4}}>~ ESTIMATED</span>}
+        {p.ppg&&<div style={{display:"flex",alignItems:"center",gap:8,flexWrap:"wrap",background:T.bgCard,border:`1px solid ${T.border}`,borderRadius:8,padding:"7px 12px",marginTop:8}}>
+          <div style={{fontFamily:"'DM Mono',monospace",fontSize:11,color:T.textLabel,letterSpacing:1.2,marginRight:2}}>{p.season||"2024-25"}</div>
+          {p.verified?<span style={{fontFamily:"'DM Mono',monospace",fontSize:11,color:"#69f0ae",letterSpacing:0.5,marginRight:2}}>✓ VERIFIED</span>:<span style={{fontFamily:"'DM Mono',monospace",fontSize:11,color:"#ff8a65",letterSpacing:0.5,marginRight:2}}>~ ESTIMATED</span>}
           {[["PPG",p.ppg,T.accent],["RPG",p.rpg,"#4fc3f7"],["APG",p.apg,"#ce93d8"]].map(([l,v,cv],i)=>(
             <React.Fragment key={l}>
-              {i>0&&<div style={{width:1,height:20,background:T.border}}/>}
-              <div style={{textAlign:"center",minWidth:36}}>
-                <div style={{fontFamily:"'DM Mono',monospace",fontSize:12,color:T.textLabel,letterSpacing:1.2,marginBottom:1}}>{l}</div>
+              {i>0&&<div style={{width:1,height:18,background:T.border}}/>}
+              <div style={{textAlign:"center",minWidth:32}}>
+                <div style={{fontFamily:"'DM Mono',monospace",fontSize:10,color:T.textLabel,letterSpacing:1,marginBottom:1}}>{l}</div>
                 <div style={{fontFamily:"'DM Mono',monospace",fontSize:11,fontWeight:700,color:cv}}>{v}</div>
               </div>
             </React.Fragment>
           ))}
           {p.best&&<div style={{fontFamily:"'DM Mono',monospace",fontSize:11,color:T.textMuted,marginLeft:8,maxWidth:160,lineHeight:1.3,overflow:"hidden",textOverflow:"ellipsis",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical"}}>{p.best}</div>}
         </div>}
-        {p.ppg&&<div style={{display:"flex",alignItems:"center",gap:10,background:T.bgCard,border:`1px solid ${T.border}`,borderRadius:8,padding:"7px 14px",marginTop:6}}>
-          <div style={{fontFamily:"'DM Mono',monospace",fontSize:13,color:T.textLabel,letterSpacing:1.5,marginRight:4}}>SHOOTING</div>
+        {p.ppg&&<div style={{display:"flex",alignItems:"center",gap:8,flexWrap:"wrap",background:T.bgCard,border:`1px solid ${T.border}`,borderRadius:8,padding:"7px 12px",marginTop:6}}>
+          <div style={{fontFamily:"'DM Mono',monospace",fontSize:11,color:T.textLabel,letterSpacing:1.2,marginRight:2}}>SHOOTING</div>
           {[["FG%",p.fgp,"#ff8a65"],["3PT%",p.tpp,"#ffe082"],["FT%",p.ftp,"#b9f6ca"]].map(([l,v,cv],i)=>(
             <React.Fragment key={l}>
-              {i>0&&<div style={{width:1,height:20,background:T.border}}/>}
-              <div style={{textAlign:"center",minWidth:40}}>
-                <div style={{fontFamily:"'DM Mono',monospace",fontSize:12,color:T.textLabel,letterSpacing:1.2,marginBottom:1}}>{l}</div>
+              {i>0&&<div style={{width:1,height:18,background:T.border}}/>}
+              <div style={{textAlign:"center",minWidth:34}}>
+                <div style={{fontFamily:"'DM Mono',monospace",fontSize:10,color:T.textLabel,letterSpacing:1,marginBottom:1}}>{l}</div>
                 <div style={{fontFamily:"'DM Mono',monospace",fontSize:11,fontWeight:700,color:(v!=null&&v!==0)?cv:T.textFaint}}>{(v!=null&&v!==0)?`${v}%`:"—"}</div>
               </div>
             </React.Fragment>
           ))}
         </div>}
-        {p.spg!=null&&<div style={{display:"flex",alignItems:"center",gap:10,background:T.bgCard,border:`1px solid ${T.border}`,borderRadius:8,padding:"7px 14px",marginTop:6}}>
-          <div style={{fontFamily:"'DM Mono',monospace",fontSize:13,color:T.textLabel,letterSpacing:1.5,marginRight:4}}>DEFENCE</div>
+        {p.spg!=null&&<div style={{display:"flex",alignItems:"center",gap:8,flexWrap:"wrap",background:T.bgCard,border:`1px solid ${T.border}`,borderRadius:8,padding:"7px 12px",marginTop:6}}>
+          <div style={{fontFamily:"'DM Mono',monospace",fontSize:11,color:T.textLabel,letterSpacing:1.2,marginRight:2}}>DEFENCE</div>
           {[["SPG",p.spg,"#69f0ae"],["BPG",p.bpg,"#4fc3f7"],["TOV",p.tov,"#ff8a65"]].map(([l,v,cv],i)=>(
             <React.Fragment key={l}>
-              {i>0&&<div style={{width:1,height:20,background:T.border}}/>}
-              <div style={{textAlign:"center",minWidth:36}}>
-                <div style={{fontFamily:"'DM Mono',monospace",fontSize:12,color:T.textLabel,letterSpacing:1.2,marginBottom:1}}>{l}</div>
+              {i>0&&<div style={{width:1,height:18,background:T.border}}/>}
+              <div style={{textAlign:"center",minWidth:32}}>
+                <div style={{fontFamily:"'DM Mono',monospace",fontSize:10,color:T.textLabel,letterSpacing:1,marginBottom:1}}>{l}</div>
                 <div style={{fontFamily:"'DM Mono',monospace",fontSize:11,fontWeight:700,color:cv}}>{v}</div>
               </div>
             </React.Fragment>
@@ -1075,7 +1075,7 @@ function ProspectsTab({activePlayers,activeSeason,onCompare,eligYearFilter,onCle
       {exportMsg&&<div style={{fontFamily:"'DM Mono',monospace",fontSize:12,color:T.accent,letterSpacing:0.5}}>{exportMsg}</div>}
     </div>
     {/* List + detail split */}
-    <div style={{display:"grid",gridTemplateColumns:(!isMobile&&selected)?"1fr 360px":"1fr",gap:14,alignItems:"start"}}>
+    <div style={{display:"grid",gridTemplateColumns:(!isMobile&&selected)?"1fr 420px":"1fr",gap:14,alignItems:"start"}}>
       <div style={{display:"grid",gap:5}}>
         {filtered.length===0?<div style={{textAlign:"center",padding:48,color:T.textGhost,fontSize:12,fontFamily:"'DM Mono',monospace"}}>No prospects match filters.</div>:filtered.map(p=><PlayerCard key={p.name+"-"+(p.season||"2024-25")} p={p} onClick={handleSelect} selected={selected?.rank===p.rank&&selected?.season===p.season}/>)}
       </div>
