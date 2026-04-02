@@ -81,7 +81,7 @@ const PAST_TRANSFERS = [
   { id:"past-003", name:"Xavier Spencer",          from:"Carleton (OUA)",    to:"UMass Lowell", conf:"AEC",    pos:"Guard",   uYear:"Y3", season:"2024-25", notes:"Carleton Ravens → America East. Transferred after 2024-25 season." , profileUrl:"https://usportshoops.ca/history/person.php?Gender=MBB&Person=spencer-xavier"},
   { id:"past-004", name:"Lennart Weber",           from:"Toronto (OUA)",     to:"Bryant",       conf:"NEC",    pos:"Center", uYear:"Y2", season:"2024-25", notes:"Early transfer — Y2 big man. Center → NEC (Bryant). Strong rebounding profile." , profileUrl:"https://usportshoops.ca/history/person.php?Gender=MBB&Person=weber-lennart"},
   { id:"past-005", name:"Javier Gilgeous-Alexander", from:"TMU (OUA)",         to:"Troy",         conf:"SBC",    pos:"Guard",   uYear:"Y4", season:"2024-25", notes:"TMU Guard → Sun Belt. Transferred after 2024-25 season." , profileUrl:"https://usportshoops.ca/history/person.php?Gender=MBB&Person=gilgeous-alexander-javier"},
-  { id:"past-006", name:"Owen Kenney",             from:"Ottawa (OUA)",      to:"South Alabama", conf:"SBC",   pos:"Forward", uYear:"Y2", season:"2025-26", notes:"6'7\" forward, 14.8 PPG / 6.4 RPG as a sophomore. OUA 3rd Team All-Star, U SPORTS All-Rookie (2024-25). 3 NCAA seasons remaining." , profileUrl:"https://usportshoops.ca/history/person.php?Gender=MBB&Person=kenney-owen"},
+  { id:"past-006", name:"Owen Kenney",             from:"Ottawa (OUA)",      to:"South Alabama", conf:"SBC",   pos:"Forward", uYear:"Y2", season:"2025-26", notes:"6'7\" forward, 14.8 PPG / 6.4 RPG as a sophomore. OUA 3rd Team All-Star, U SPORTS All-Rookie (2024-25). 3 NCAA seasons remaining. 2025-26 transfer (2026 portal class)." , profileUrl:"https://usportshoops.ca/history/person.php?Gender=MBB&Person=kenney-owen"},
 ];
 
 const PLAYERS_2526 = [
@@ -391,17 +391,17 @@ const NCAA_SCHOOLS = [
   { name:"Bucknell",         conf:"PL", w:18, l:14,  ortg:105.8, drtg:109.0, adjt:67.8, pace:"Medium",      sys:"Controlled-Tempo, Balanced",  tier:2, ca:3, kp:215, slots:4, coach:"John Davis",  tenure:5,  pos:[7,4,2], need:[3,2,1] },
   { name:"American",         conf:"PL", w:20, l:14,  ortg:108.4, drtg:106.0, adjt:68.5, pace:"Med-Fast",     sys:"Moderate-Tempo, Balanced",tier:2, ca:2, kp:238, slots:4, coach:"Duane Simpkins",    tenure:2,  pos:[7,3,2], need:[3,1,1] },
   { name:"Boston University",conf:"PL", w:16, l:16,  ortg:103.1, drtg:105.2, adjt:67.2, pace:"Medium",      sys:"Controlled-Tempo, Balanced",       tier:2, ca:3, kp:291, slots:4, coach:"Joe Jones",          tenure:9,  pos:[7,4,2], need:[2,2,1] },
-  { name:"Buffalo",          conf:"MAC", w:18, l:16,  ortg:99.1,  drtg:103.4, adjt:72.7, pace:"Fast",     sys:"Up-Tempo, Balanced",      tier:3, ca:9, kp:149, slots:4, coach:"Jim Whitesell",  tenure:1,  pos:[9,2,1], need:[3,1,1] },
-  { name:"Akron",            conf:"MAC", w:24, l:10, l:7+6.47,  ortg:113.6, drtg:107.1, adjt:71.7, pace:"Fast",     sys:"Up-Tempo, Offense-First",      tier:3, ca:3, kp:100, slots:3, coach:"John Groce",         tenure:3,  pos:[7,4,1], need:[3,2,0] },
+  { name:"Buffalo",          conf:"MAC", w:18, l:16,  ortg:99.1,  drtg:103.4, adjt:72.7, pace:"Fast",     sys:"Up-Tempo, Balanced",      tier:3, ca:9, kp:149, slots:4, coach:"George Halcovage III",  tenure:1,  pos:[9,2,1], need:[3,1,1] },
+  { name:"Akron",            conf:"MAC", w:24, l:10, l:7+6.47,  ortg:113.6, drtg:107.1, adjt:71.7, pace:"Fast",     sys:"Up-Tempo, Offense-First",      tier:3, ca:3, kp:100, slots:3, coach:"Dustin Ford",         tenure:3,  pos:[7,4,1], need:[3,2,0] },
   { name:"Bowling Green",    conf:"MAC", w:16, l:16, ortg:99.2,  drtg:109.8, adjt:68.9, pace:"Med-Fast", sys:"Moderate-Tempo, Balanced",       tier:3, ca:5, kp:289, slots:5, coach:"Todd Simon",         tenure:1,  pos:[8,2,2], need:[3,1,1] },
   { name:"Western Michigan", conf:"MAC", w:12, l:20, ortg:101.7, drtg:112.4, adjt:68.0, pace:"Med-Fast", sys:"Moderate-Tempo, Balanced",       tier:3, ca:4, kp:290, slots:5, coach:"Kahil Fennel",   tenure:5,  pos:[7,4,1], need:[4,3,0] },
-  { name:"Central Michigan", conf:"MAC", w:14, l:18,  ortg:105.5, drtg:108.4, adjt:67.4, pace:"Medium", sys:"Controlled-Tempo, Balanced",       tier:3, ca:5, kp:198, slots:4, coach:"Tony Barbee",        tenure:3,  pos:[8,3,1], need:[3,1,0] },
+  { name:"Central Michigan", conf:"MAC", w:14, l:18,  ortg:105.5, drtg:108.4, adjt:67.4, pace:"Medium", sys:"Controlled-Tempo, Balanced",       tier:3, ca:5, kp:198, slots:4, coach:"Andy Bronkema",        tenure:3,  pos:[8,3,1], need:[3,1,0] },
   { name:"Ohio",             conf:"MAC", w:20, l:14,  ortg:106.3, drtg:109.1, adjt:70.5, pace:"Med-Fast",     sys:"Moderate-Tempo, Balanced",       tier:3, ca:4, kp:195, slots:3, coach:"Jeff Boals",         tenure:7,  pos:[8,3,1], need:[4,1,1] },
   { name:"Vermont",          conf:"AE", w:22, l:12,  ortg:99.3,  drtg:105.6, adjt:62.6, pace:"Slow",     sys:"Deliberate, Balanced",  tier:3, ca:5, kp:242, slots:2, coach:"John Becker",        tenure:14, pos:[8,3,1], need:[3,1,1] },
   { name:"Maine",            conf:"AE", w:14, l:18,  ortg:100.1, drtg:104.7, adjt:66.2, pace:"Medium",   sys:"Controlled-Tempo, Balanced",       tier:3, ca:5, kp:219, slots:3, coach:"Chris Markwood",    tenure:7,  pos:[7,4,1], need:[3,1,0] },
   { name:"UMass Lowell",     conf:"AE", w:15, l:17,  ortg:108.7, drtg:115.1, adjt:68.8, pace:"Med-Fast", sys:"Moderate-Tempo, Balanced",       tier:3, ca:4, kp:244, slots:4, coach:"Pat Duquette",      tenure:3, pos:[8,2,2], need:[4,1,1] },
   { name:"Albany",           conf:"AE", w:16, l:16,  ortg:103.3, drtg:112.5, adjt:67.7, pace:"Medium", sys:"Controlled-Tempo, Balanced",       tier:3, ca:3, kp:275, slots:3, coach:"Dwayne Killings",   tenure:12,  pos:[8,3,1], need:[4,1,0] },
-  { name:"Tennessee Tech",   conf:"OVC", w:15, l:17,  ortg:108.4, drtg:110.6, adjt:67.3, pace:"Medium",      sys:"Controlled-Tempo, Balanced",   tier:3, ca:2, kp:168, slots:4, coach:"John Pelphrey",     tenure:3,  pos:[6,4,2], need:[3,1,1] },
+  { name:"Tennessee Tech",   conf:"OVC", w:15, l:17,  ortg:108.4, drtg:110.6, adjt:67.3, pace:"Medium",      sys:"Controlled-Tempo, Balanced",   tier:3, ca:2, kp:168, slots:4, coach:"Tobin Anderson",     tenure:3,  pos:[6,4,2], need:[3,1,1] },
 
   // ── BIG EAST EXPANSION ───────────────────────────────────────────────────
   { name:"UConn",            conf:"BE", w:24, l:11, ortg:116.8, drtg:94.2,  adjt:71.2, pace:"Fast",     sys:"Up-Tempo, Offense-First",  tier:1, ca:5, kp:5,   slots:3, coach:"Dan Hurley",       tenure:41,  pos:[8,5,1], need:[2,2,0] },
@@ -429,20 +429,20 @@ const NCAA_SCHOOLS = [
 
   // ── BIG 12 EXPANSION ─────────────────────────────────────────────────────
   { name:"Cincinnati",       conf:"B12", w:19, l:16, ortg:112.4, drtg:98.8,  adjt:69.6, pace:"Med-Fast", sys:"Moderate-Tempo, Offense-First",       tier:2, ca:4, kp:58,  slots:4, coach:"TBD (Wes Miller fired Mar 2026)",        tenure:4,  pos:[8,4,2], need:[3,2,1] },
-  { name:"West Virginia",    conf:"B12", w:19, l:15,  ortg:109.6, drtg:101.2, adjt:68.8, pace:"Med-Fast",     sys:"Moderate-Tempo, Balanced",      tier:2, ca:3, kp:81,  slots:4, coach:"Darian DeVries",    tenure:2,  pos:[7,4,2], need:[3,2,1] },
+  { name:"West Virginia",    conf:"B12", w:19, l:15,  ortg:109.6, drtg:101.2, adjt:68.8, pace:"Med-Fast",     sys:"Moderate-Tempo, Balanced",      tier:2, ca:3, kp:81,  slots:4, coach:"Ross Hodge",    tenure:2,  pos:[7,4,2], need:[3,2,1] },
   { name:"Kansas State",     conf:"B12", w:23, l:12, ortg:114.2, drtg:97.0,  adjt:70.2, pace:"Med-Fast", sys:"Moderate-Tempo, Offense-First",     tier:2, ca:4, kp:32,  slots:4, coach:"Casey Alexander",       tenure:0,  pos:[7,4,2], need:[3,2,1] },
 
   // ── ATLANTIC 10 EXPANSION ────────────────────────────────────────────────
   { name:"Dayton",           conf:"A10", w:22, l:12,  ortg:110.8, drtg:102.4, adjt:68.4, pace:"Med-Fast", sys:"Moderate-Tempo, Offense-First",  tier:2, ca:4, kp:70,  slots:4, coach:"Anthony Grant",     tenure:3,  pos:[7,4,2], need:[3,2,1] },
-  { name:"VCU",              conf:"A10", w:20, l:14, ortg:109.4, drtg:99.2,  adjt:69.0, pace:"Med-Fast",     sys:"Moderate-Tempo, Defense-First",      tier:2, ca:3, kp:67,  slots:4, coach:"Ryan Odom",      tenure:0,  pos:[7,4,2], need:[3,2,1] },
+  { name:"VCU",              conf:"A10", w:20, l:14, ortg:109.4, drtg:99.2,  adjt:69.0, pace:"Med-Fast",     sys:"Moderate-Tempo, Defense-First",      tier:2, ca:3, kp:67,  slots:4, coach:"Phil Martelli",      tenure:0,  pos:[7,4,2], need:[3,2,1] },
   { name:"Saint Louis",      conf:"A10", w:25, l:10,  ortg:110.2, drtg:100.8, adjt:68.6, pace:"Med-Fast", sys:"Moderate-Tempo, Offense-First",       tier:2, ca:3, kp:78,  slots:4, coach:"Josh Schertz",      tenure:3,  pos:[7,4,2], need:[3,2,1] },
   { name:"Davidson",         conf:"A10", w:18, l:14,  ortg:107.6, drtg:104.8, adjt:67.4, pace:"Medium",     sys:"Controlled-Tempo, Balanced",  tier:3, ca:3, kp:158, slots:4, coach:"Matt McKillop",     tenure:2,  pos:[7,3,2], need:[3,1,1] },
 
   // ── A10 FORWARD-HEAVY MID-MAJORS ─────────────────────────────────────────
   { name:"Rhode Island",     conf:"A10", w:18, l:15,  ortg:106.4, drtg:107.6, adjt:67.2, pace:"Medium", sys:"Controlled-Tempo, Balanced",  tier:3, ca:3, kp:170, slots:4, coach:"Archie Miller",     tenure:3,  pos:[7,4,2], need:[3,2,1] },
   { name:"UMass",            conf:"A10", w:14, l:18,  ortg:104.2, drtg:107.8, adjt:66.8, pace:"Medium", sys:"Controlled-Tempo, Balanced",  tier:3, ca:3, kp:185, slots:5, coach:"Frank Martin",      tenure:4,  pos:[7,4,2], need:[3,2,1] },
-  { name:"Saint Joseph's",   conf:"A10", w:12, l:20,  ortg:101.8, drtg:110.4, adjt:66.4, pace:"Medium", sys:"Controlled-Tempo, Balanced",     tier:3, ca:3, kp:202, slots:5, coach:"Billy Lange",       tenure:14,  pos:[7,4,2], need:[3,3,1] },
-  { name:"Fordham",          conf:"A10", w:14, l:18,  ortg:100.6, drtg:110.2, adjt:66.2, pace:"Medium", sys:"Controlled-Tempo, Balanced",     tier:3, ca:3, kp:220, slots:5, coach:"Keith Urgo",      tenure:0,  pos:[7,4,2], need:[3,3,1] },
+  { name:"Saint Joseph's",   conf:"A10", w:12, l:20,  ortg:101.8, drtg:110.4, adjt:66.4, pace:"Medium", sys:"Controlled-Tempo, Balanced",     tier:3, ca:3, kp:202, slots:5, coach:"Steve Donahue",       tenure:14,  pos:[7,4,2], need:[3,3,1] },
+  { name:"Fordham",          conf:"A10", w:14, l:18,  ortg:100.6, drtg:110.2, adjt:66.2, pace:"Medium", sys:"Controlled-Tempo, Balanced",     tier:3, ca:3, kp:220, slots:5, coach:"Mike Magpayo",      tenure:0,  pos:[7,4,2], need:[3,3,1] },
 ];
 
 // ─── STYLES & HELPERS ────────────────────────────────────────────────────────
@@ -770,8 +770,8 @@ function DetailPanel({p,onClose,onCompare}){
     {label:"Positional Demand",key:"demand",color:"#ff8a65",weight:"25%",tip:"Open roster slots at target NCAA programs for this player's position"},
     {label:"Eligibility + Context",key:"elig",color:T.accent,weight:"20%",tip:"Years of NCAA eligibility remaining + conference proximity + strength of schedule"}];
   return <div style={{background:T.bgPanel,border:`1px solid ${T.borderAccent}`,borderRadius:12,padding:"20px",backdropFilter:"blur(20px)",boxShadow:mode==="light"?"0 4px 24px rgba(0,0,0,0.08)":"none"}}>
-    <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:16}}>
-      <div>
+    <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:16,gap:12}}>
+      <div style={{flex:1,minWidth:0,overflow:"hidden"}}>
         <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:5}}>
           <span style={{fontFamily:"'DM Mono',monospace",fontSize:11,color:T.textLabel}}>#{p.rank} NORTHSCORE™</span>
           <span style={{fontSize:12,fontWeight:700,padding:"2px 6px",borderRadius:3,background:yc.bg,color:yc.color,border:`1px solid ${yc.color}28`}}>{p.year} · {yc.label}</span>
@@ -806,7 +806,7 @@ function DetailPanel({p,onClose,onCompare}){
               </div>
             </React.Fragment>
           ))}
-          {p.best&&<div style={{fontFamily:"'DM Mono',monospace",fontSize:12,color:T.textMuted,marginLeft:"auto",maxWidth:180,lineHeight:1.4}}>{p.best}</div>}
+          {p.best&&<div style={{fontFamily:"'DM Mono',monospace",fontSize:11,color:T.textMuted,marginLeft:8,maxWidth:160,lineHeight:1.3,overflow:"hidden",textOverflow:"ellipsis",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical"}}>{p.best}</div>}
         </div>}
         {p.ppg&&<div style={{display:"flex",alignItems:"center",gap:10,background:T.bgCard,border:`1px solid ${T.border}`,borderRadius:8,padding:"7px 14px",marginTop:6}}>
           <div style={{fontFamily:"'DM Mono',monospace",fontSize:13,color:T.textLabel,letterSpacing:1.5,marginRight:4}}>SHOOTING</div>
@@ -1079,7 +1079,7 @@ function ProspectsTab({activePlayers,activeSeason,onCompare,eligYearFilter,onCle
       <div style={{display:"grid",gap:5}}>
         {filtered.length===0?<div style={{textAlign:"center",padding:48,color:T.textGhost,fontSize:12,fontFamily:"'DM Mono',monospace"}}>No prospects match filters.</div>:filtered.map(p=><PlayerCard key={p.name+"-"+(p.season||"2024-25")} p={p} onClick={handleSelect} selected={selected?.rank===p.rank&&selected?.season===p.season}/>)}
       </div>
-      {selected&&!isMobile&&<div style={{position:"sticky",top:20}}><DetailPanel p={selected} onClose={()=>setSelected(null)} onCompare={onCompare}/></div>}
+      {selected&&!isMobile&&<div style={{position:"sticky",top:20,maxHeight:"calc(100vh - 40px)",overflowY:"auto",scrollbarWidth:"thin"}}><DetailPanel p={selected} onClose={()=>setSelected(null)} onCompare={onCompare}/></div>}
     </div>
 
     {/* Mobile: detail panel as full-width block below list */}
