@@ -224,17 +224,17 @@ const NCAA_SCHOOLS_W = [
   // America East
   { name:"Vermont",          conf:"AE",   w:25, l:7,  net:+15.8, ortg:101.3, drtg:85.5,  adjt:66.8, pace:"Medium",     sys:"Controlled-Tempo, Defense-First", tier:2, ca:2, kp:58,  slots:3, coach:"Alisa Kresge",               tenure:14, pos:[7,4,2], need:[1,1,1] },
   { name:"Maine",            conf:"AE",   w:19, l:13, net:+6.4,  ortg:97.3,  drtg:90.9,  adjt:66.1, pace:"Medium",     sys:"Controlled-Tempo, Defense-First", tier:3, ca:0, kp:113, slots:4, coach:"Amy Vachon",               tenure:7, pos:[7,4,2], need:[2,1,1] },
-  { name:"UMass Lowell",     conf:"AE",   w:15, l:18, net:-24.3, ortg:79.8,  drtg:104.1, adjt:66.6, pace:"Medium",     sys:"Controlled-Tempo, Balanced", tier:3, ca:1, kp:347,slots:5, coach:"Jenerrie Harris",               tenure:3, pos:[7,4,1], need:[3,1,1] },
-  { name:"Albany",           conf:"AE",   w:11, l:21, net:+1.3,  ortg:93.2,  drtg:91.9,  adjt:66.3, pace:"Medium",     sys:"Controlled-Tempo, Defense-First", tier:3, ca:1, kp:157,slots:5, coach:"Colleen Mullen",               tenure:12, pos:[7,4,2], need:[3,1,1] },
+  { name:"UMass Lowell",     conf:"AE",   w:15, l:18, net:-24.3, ortg:79.8,  drtg:104.1, adjt:66.6, pace:"Medium",     sys:"Controlled-Tempo, Balanced", tier:3, ca:1, kp:347,slots:5, coach:"Jill Plefka",               tenure:3, pos:[7,4,1], need:[3,1,1] },
+  { name:"Albany",           conf:"AE",   w:11, l:21, net:+1.3,  ortg:93.2,  drtg:91.9,  adjt:66.3, pace:"Medium",     sys:"Controlled-Tempo, Defense-First", tier:3, ca:1, kp:157,slots:5, coach:"Kelly Monroe",               tenure:12, pos:[7,4,2], need:[3,1,1] },
   // MWC
   { name:"Boise State",      conf:"MWC",  w:24, l:9,  net:+4.7,  ortg:98.2,  drtg:93.5,  adjt:70.4, pace:"Med-Fast", sys:"Moderate-Tempo, Defense-First", tier:2, ca:1, kp:126, slots:3, coach:"Gordy Presnell",               tenure:18, pos:[7,4,2], need:[1,1,1] },
   { name:"San Diego State",  conf:"MWC",  w:24, l:5,  net:+14.2, ortg:102.6, drtg:88.4,  adjt:70.4, pace:"Med-Fast",     sys:"Moderate-Tempo, Defense-First", tier:2, ca:0, kp:70,  slots:3, coach:"Stacie Terry-Hutson",               tenure:4, pos:[7,4,2], need:[1,1,1] },
   { name:"Colorado State",   conf:"MWC",  w:26, l:7,  net:+14.7, ortg:101.6, drtg:86.9,  adjt:70.3, pace:"Med-Fast",     sys:"Moderate-Tempo, Defense-First", tier:2, ca:0, kp:65,  slots:3, coach:"Ryun Williams",               tenure:13, pos:[7,4,2], need:[1,1,1] },
   // Patriot League
-  { name:"Army",             conf:"PL",   w:23, l:7,  net:+9.2, ortg:98.1,  drtg:88.9,  adjt:67.0, pace:"Medium",     sys:"Controlled-Tempo, Defense-First", tier:3, ca:0, kp:93, slots:3, coach:"Missy Traversi",               tenure:4, pos:[7,4,2], need:[1,1,1] },
-  { name:"Bucknell",         conf:"PL",   w:10, l:23, net:-13.2, ortg:83.1,  drtg:96.3,  adjt:66.4, pace:"Medium",     sys:"Controlled-Tempo, Defense-First", tier:3, ca:0, kp:287,slots:5, coach:"Aaron Haar",               tenure:5, pos:[7,4,2], need:[3,1,1] },
+  { name:"Army",             conf:"PL",   w:23, l:7,  net:+9.2, ortg:98.1,  drtg:88.9,  adjt:67.0, pace:"Medium",     sys:"Controlled-Tempo, Defense-First", tier:3, ca:0, kp:93, slots:3, coach:"Dave Kuester",               tenure:4, pos:[7,4,2], need:[1,1,1] },
+  { name:"Bucknell",         conf:"PL",   w:10, l:23, net:-13.2, ortg:83.1,  drtg:96.3,  adjt:66.4, pace:"Medium",     sys:"Controlled-Tempo, Defense-First", tier:3, ca:0, kp:287,slots:5, coach:"Aaron Woodruff",               tenure:5, pos:[7,4,2], need:[3,1,1] },
   // Other
-  { name:"Bryant",           conf:"AE",   w:16, l:12, net:+0.7,  ortg:91.1,  drtg:90.4,  adjt:66.2, pace:"Medium",     sys:"Controlled-Tempo, Defense-First", tier:3, ca:0, kp:162, slots:4, coach:"Mary Burke",               tenure:14, pos:[7,4,2], need:[2,1,1] },
+  { name:"Bryant",           conf:"AE",   w:16, l:12, net:+0.7,  ortg:91.1,  drtg:90.4,  adjt:66.2, pace:"Medium",     sys:"Controlled-Tempo, Defense-First", tier:3, ca:0, kp:162, slots:4, coach:"Lynne-Ann Kokoski",               tenure:14, pos:[7,4,2], need:[2,1,1] },
   { name:"Quinnipiac",       conf:"MAAC", w:26, l:6,  net:+17.3, ortg:102.3, drtg:85.0,  adjt:69.1, pace:"Med-Fast",     sys:"Moderate-Tempo, Defense-First", tier:2, ca:0, kp:55,  slots:3, coach:"Tricia Fabbri",               tenure:30, pos:[7,4,2], need:[1,1,1] },
 ];
 
