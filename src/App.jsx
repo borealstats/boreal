@@ -209,15 +209,15 @@ const NCAA_SCHOOLS_W = [
   { name:"Cincinnati",       conf:"B12",  w:10, l:20, net:+3.8,  ortg:99.5,  drtg:95.7, adjt:71.6, pace:"Fast", sys:"Up-Tempo, Defense-First", tier:1, ca:1, kp:133, slots:5, coach:"Katrina Merriweather",               tenure:4, pos:[7,4,2], need:[3,1,1] },
   // WCC
   { name:"Gonzaga",          conf:"WCC",  w:24, l:9,  net:+18.2, ortg:107.4, drtg:89.2,  adjt:70.9, pace:"Med-Fast",   sys:"Moderate-Tempo, Defense-First", tier:2, ca:0, kp:53,  slots:4, coach:"Lisa Fortier",               tenure:8, pos:[7,4,2], need:[2,1,1] },
-  { name:"Santa Clara",      conf:"WCC",  w:22, l:9,  net:+12.3, ortg:104.1, drtg:91.8,  adjt:70.4, pace:"Med-Fast",     sys:"Moderate-Tempo, Defense-First", tier:2, ca:0, kp:79,  slots:4, coach:"Bill Carr",               tenure:4, pos:[7,4,2], need:[2,1,1] },
+  { name:"Santa Clara",      conf:"WCC",  w:22, l:9,  net:+12.3, ortg:104.1, drtg:91.8,  adjt:70.4, pace:"Med-Fast",     sys:"Moderate-Tempo, Defense-First", tier:2, ca:0, kp:79,  slots:4, coach:"Loree Payne",               tenure:1, pos:[7,4,2], need:[2,1,1] },
   // A10
   { name:"Dayton",           conf:"A10",  w:17, l:14, net:-0.2,  ortg:95.0,  drtg:95.2,  adjt:69.3, pace:"Med-Fast",   sys:"Moderate-Tempo, Defense-First", tier:2, ca:4, kp:171, slots:4, coach:"Tamika Williams-Jeter",               tenure:3, pos:[7,4,2], need:[2,1,1] },
   { name:"VCU",              conf:"A10",  w:14, l:16, net:-10.8, ortg:84.6,  drtg:95.4,  adjt:69.9, pace:"Med-Fast",   sys:"Moderate-Tempo, Defense-First", tier:2, ca:2, kp:272,slots:7, coach:"Vacant (O'Boyle fired)",               tenure:0, pos:[6,4,2], need:[4,2,1] },
-  { name:"Richmond",         conf:"A10",  w:26, l:7,  net:+27.8, ortg:111.5, drtg:83.7,  adjt:69.6, pace:"Med-Fast",     sys:"Moderate-Tempo, Offense-First", tier:2, ca:0, kp:27,  slots:3, coach:"Aaron Roussell",               tenure:8, pos:[7,4,2], need:[1,1,1] },
+  { name:"Richmond",         conf:"A10",  w:26, l:7,  net:+27.8, ortg:111.5, drtg:83.7,  adjt:69.6, pace:"Med-Fast",     sys:"Moderate-Tempo, Offense-First", tier:2, ca:0, kp:27,  slots:3, coach:"Radice",               tenure:1, pos:[7,4,2], need:[1,1,1] },
   { name:"Saint Joseph's",   conf:"A10",  w:18, l:11, net:+12.5,  ortg:100.6,  drtg:88.1,  adjt:69.1, pace:"Med-Fast",     sys:"Moderate-Tempo, Defense-First", tier:2, ca:0, kp:77,  slots:4, coach:"Cindy Griffin",               tenure:8, pos:[7,4,2], need:[2,1,1] },
   // MAC
-  { name:"Buffalo",          conf:"MAC",  w:3,  l:27, net:-16.6, ortg:83.0,  drtg:99.6,  adjt:71.2, pace:"Fast", sys:"Up-Tempo, Defense-First", tier:3, ca:1, kp:308,slots:6, coach:"Scott Hemer",               tenure:1, pos:[6,4,2], need:[3,2,1] },
-  { name:"Akron",            conf:"MAC",  w:5,  l:24, net:-14.0, ortg:89.9,  drtg:103.9, adjt:71.8, pace:"Fast",     sys:"Up-Tempo, Balanced", tier:3, ca:1, kp:292, slots:5, coach:"Melissa Jackson",               tenure:3, pos:[7,4,2], need:[3,1,1] },
+  { name:"Buffalo",          conf:"MAC",  w:3,  l:27, net:-16.6, ortg:83.0,  drtg:99.6,  adjt:71.2, pace:"Fast", sys:"Up-Tempo, Defense-First", tier:3, ca:1, kp:308,slots:6, coach:"Sharkey",               tenure:1, pos:[6,4,2], need:[3,2,1] },
+  { name:"Akron",            conf:"MAC",  w:5,  l:24, net:-14.0, ortg:89.9,  drtg:103.9, adjt:71.8, pace:"Fast",     sys:"Up-Tempo, Balanced", tier:3, ca:1, kp:292, slots:5, coach:"Gensler",               tenure:1, pos:[7,4,2], need:[3,1,1] },
   { name:"Miami (OH)",       conf:"MAC",  w:25, l:6,  net:+10.2, ortg:97.5,  drtg:87.3,  adjt:72.1, pace:"Fast",   sys:"Up-Tempo, Defense-First", tier:2, ca:0, kp:87,  slots:3, coach:"Glenn Box",               tenure:3, pos:[8,4,2], need:[1,1,1] },
   { name:"Ball State",       conf:"MAC",  w:25, l:7,  net:+15.2, ortg:103.6, drtg:88.4,  adjt:72.2, pace:"Fast",     sys:"Up-Tempo, Defense-First", tier:2, ca:0, kp:63,  slots:3, coach:"Brady Sallee",               tenure:8, pos:[8,4,1], need:[1,1,1] },
   { name:"Bowling Green",    conf:"MAC",  w:13, l:14, net:-2.5,  ortg:93.2,  drtg:95.7,  adjt:72.0, pace:"Fast", sys:"Up-Tempo, Defense-First", tier:3, ca:1, kp:194, slots:5, coach:"Fred Chmiel",               tenure:1, pos:[7,4,2], need:[3,1,1] },
@@ -1926,6 +1926,31 @@ function AboutTab({gender="men", activeSchools=[], activePlayers=[], allPlayers=
 
   </div>;
 }
+
+
+const GLOSSARY_ITEMS = [
+  {term:"NorthScore™",def:"Composite 0–100 rating measuring how well a U Sports player fits a specific NCAA D1 programme. Weighted across four dimensions: Statistical Production (30%), System Compatibility (25%), Positional Fit (25%), Eligibility Value (20%). Higher = better fit.",section:"Formula"},
+  {term:"Statistical Production",def:"30% of NorthScore. PPG, RPG, APG, SPG, BPG, FG% weighted and normalised against the full U Sports pool, then adjusted for conference strength of schedule (SOS). A player in a stronger conference scores higher at the same raw stat line.",section:"Formula"},
+  {term:"System Compatibility",def:"25% of NorthScore. How well the player's playing style, tempo, and offensive system translates to the target NCAA programme. Based on KenPom/Her Hoop Stats adjusted tempo and pace classification.",section:"Formula"},
+  {term:"Positional Fit",def:"25% of NorthScore. Whether the target NCAA school's roster profile has open slots at the player's position. A guard scores higher at a school that needs guards than at one that's already stacked at the position.",section:"Formula"},
+  {term:"Eligibility Value",def:"20% of NorthScore. NCAA seasons remaining. A Y1 (freshman) with 4 seasons of eligibility scores higher than a Y4 (senior) with 1 season. Rewards long-term programme fit.",section:"Formula"},
+  {term:"SOS (Strength of Schedule)",def:"Multiplier applied to raw stats based on conference quality. OUA top-6 programmes receive 1.00×. Weaker conferences receive lower multipliers (e.g., 0.75× or 0.80×). Adjusts for the reality that 20 PPG in the OUA is harder to achieve than 20 PPG in a weaker conference.",section:"Strength of Schedule"},
+  {term:"OUA",def:"Ontario University Athletics. The largest and most competitive U SPORTS conference. Includes Carleton, Ottawa, Queen's, Toronto Metropolitan, Windsor, McMaster, Western, and others. Top-6 OUA programmes receive 1.00× SOS multiplier.",section:"Conferences"},
+  {term:"AUS",def:"Atlantic University Sport. Includes StFX, Dalhousie, UNB, Acadia, Saint Mary's, Cape Breton, UPEI, Memorial. Strong basketball conference, typically receives 0.75× SOS multiplier.",section:"Conferences"},
+  {term:"CW",def:"Canada West. Includes Alberta, Calgary, UBC, Victoria, Saskatchewan, Brandon, Manitoba, Mount Royal, and others. Receives 0.80–0.85× SOS multiplier depending on programme.",section:"Conferences"},
+  {term:"RSEQ",def:"Réseau du sport étudiant du Québec. Includes Laval, Concordia, McGill, UQAM, Bishop's, Sherbrooke. Receives 0.85–0.90× SOS multiplier.",section:"Conferences"},
+  {term:"Transfer Portal",def:"The NCAA mechanism through which student-athletes can transfer between institutions. Once a player enters the portal, they become visible to all NCAA programmes. U Sports players entering the NCAA for the first time also use the portal process.",section:"Transfer Portal"},
+  {term:"Portal Window",def:"The designated period during which student-athletes may enter the transfer portal. For basketball, the spring 2026 portal opens April 6.",section:"Transfer Portal"},
+  {term:"Y1 / Y2 / Y3 / Y4 / Y5",def:"U Sports playing year. Y1 = freshman (4 NCAA seasons remaining), Y2 = sophomore (3 remaining), Y3 = junior (2 remaining), Y4 = senior (1 remaining), Y5 = fifth-year senior (1 remaining, limited eligibility value).",section:"Transfer Portal"},
+  {term:"KenPom",def:"Ken Pomeroy's advanced college basketball analytics system. Used by Boreal for NCAA school data including adjusted tempo, offensive rating, defensive rating, and national rankings. The industry standard for programme evaluation.",section:"Metrics"},
+  {term:"Her Hoop Stats",def:"Women's basketball analytics platform. Used by Boreal as the data source for WBB NCAA school metrics and programme evaluation.",section:"Metrics"},
+  {term:"AdjT (Adjusted Tempo)",def:"KenPom/HHS metric measuring possessions per 40 minutes, adjusted for opponent pace. Higher AdjT = faster-playing team. Used in System Compatibility scoring.",section:"Metrics"},
+  {term:"ORtg (Offensive Rating)",def:"Points scored per 100 possessions, adjusted for opponent strength. Higher = more efficient offence.",section:"Metrics"},
+  {term:"DRtg (Defensive Rating)",def:"Points allowed per 100 possessions, adjusted for opponent strength. Lower = better defence.",section:"Metrics"},
+  {term:"Net Rating",def:"ORtg minus DRtg. Positive = team scores more efficiently than it allows. Negative = the opposite. A quick indicator of overall programme quality.",section:"Metrics"},
+  {term:"Verified",def:"Player stats confirmed from official U Sports box scores. No estimates, no projections. The ✓ VERIFIED badge on a player card means every stat line has been cross-referenced.",section:"Formula"},
+  {term:"Estimated",def:"Player stats that have not yet been verified from official box scores. Marked with ~ ESTIMATED. Typically applies to players whose season is still in progress or whose conference publishes stats late.",section:"Formula"},
+];
 
 function GlossaryTab(){
   const mode=useTheme(); const T=THEMES[mode];
